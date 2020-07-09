@@ -11,7 +11,7 @@ lazy val root = (project in file("."))
     scalastyleFailOnError := true,
     scalastyleFailOnWarning := false,
     scalafmtOnCompile := true,
-    libraryDependencies += scalaTest % Test
+    libraryDependencies ++= Seq(catsCore, scalaTest % Test)
   )
   .settings(addCompilerPlugin(kindProjectorSetting))
 
@@ -21,8 +21,9 @@ scalacOptions ++= Seq(
   "-language:higherKinds",
   "-language:postfixOps",
   "-deprecation",
-  "-Ypartial-unification",
-  "-encoding"
+  "-encoding",
+  "UTF-8",
+  "-Xlint"
 )
 
 resolvers ++= Seq(
