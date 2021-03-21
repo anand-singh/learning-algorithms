@@ -3,6 +3,7 @@
 .idea
 .bloop
 .metals
-project/
+*.DS_Store
 target
 target/
+project/
