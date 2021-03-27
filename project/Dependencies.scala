@@ -8,5 +8,5 @@ object Dependencies {
 
   lazy val catsCore = "org.typelevel" %% "cats-core" % Version.cats
 
-  lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.1.1"
+  lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.1.4"
 }
