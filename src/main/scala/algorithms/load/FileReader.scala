@@ -13,8 +13,8 @@ object FileReader {
           .map(_.toInt)
           .toList
       )
-      .map({
-        case a :: b :: _ => (a, b)
+      .map({ case a :: b :: _ =>
+        (a, b)
       })
 
 }
