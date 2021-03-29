@@ -3,7 +3,7 @@ import sbt._
 object Dependencies {
 
   object Version {
-    lazy val cats = "2.4.2"
+    lazy val cats = "2.5.0"
   }
 
   lazy val catsCore = "org.typelevel" %% "cats-core" % Version.cats
