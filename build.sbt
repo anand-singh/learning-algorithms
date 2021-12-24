@@ -3,14 +3,14 @@ import sbtrelease.ReleaseStateTransformations._
 import sbtrelease.ReleasePlugin.autoImport._
 
 ThisBuild / scalaVersion := "2.13.7"
-ThisBuild / version := "0.1.0-SNAPSHOT"
+ThisBuild / version      := "0.1.0-SNAPSHOT"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "learning-algorithms",
-    scalastyleFailOnError := true,
+    name                    := "learning-algorithms",
+    scalastyleFailOnError   := true,
     scalastyleFailOnWarning := false,
-    scalafmtOnCompile := true,
+    scalafmtOnCompile       := true,
     libraryDependencies ++= Seq(catsCore, scalaTest % Test)
   )
   .settings(addCompilerPlugin(kindProjectorSetting))
